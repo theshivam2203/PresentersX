@@ -1,0 +1,73 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'about.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PresenterX</title>
+    <link rel="icon" href="{% static 'logo.jpg'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="logo/jpg" href="/favicon.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="presenterx">
+                <a href="#">
+                  <img src={%static 'logo.jpg' %} alt="Logo" width="32" height="32" class="d-inline-block align-text-top" href=''>
+                  PresenterX</a>
+            </div>
+                <ul class="menu">
+                    <li><a href="features" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/features">Hand Gestures</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/features">Voice Commands</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+             </div>
+             <div class="banner-text">
+                <h1>About <span>Us</span></h1>
+            </div>
+            <div class="paragraph"> <p><strong>About Our Vision</strong>
+                <br>
+                At PresenterX, we are on a mission to revolutionize the way people interact with presentations. We believe that the future of presentations should be seamless, interactive, and accessible to all.
+                <br>
+                <br>
+                <strong>Our Journey</strong>
+                <br>
+                Our journey began with a simple question: "How can we make presentations more engaging and user-friendly?" The answer led us to the exciting intersection of computer vision, hand gestures, and voice recognition. We embarked on a mission to develop a solution that empowers presenters to control their slides effortlessly, without the constraints of traditional clickers or touchscreens.
+                <br>
+                <br>
+                <strong>Our Commitment</strong>
+                <br>
+                We are committed to providing a presentation control system that combines the power of gesture recognition and voice commands. Our technology is designed to enhance accessibility, spark engagement, and make presentations more dynamic. We believe that everyone, regardless of their physical abilities, should have the tools to captivate their audience with confidence.
+                <br>
+                <br>
+                <strong>Join Us in Shaping the Future</strong>
+                <br>
+                We invite you to be part of our journey as we continue to innovate and refine our presentation control system. Together, we can create presentations that are more than just slides — they are dynamic, immersive experiences that leave a lasting impact.
+                <br>
+                <br>
+                <strong>Thank you for choosing PresenterX to be your partner in redefining presentations for the future.</strong>
+            </p> 
+            </div>
+            </header>     
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </body>
+        </html>
+
+{% comment %} {% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}|
+
+{% block body %}
+This is AboutPage.
+{% endblock body %} {% endcomment %}
